@@ -115,15 +115,15 @@ function SignUp() {
   // Ensure the return is properly indented and inside the SignUp function.
   return (
     <Homelayout>
-      <div className="flex items-center flex-row bg-gradient-to-r from-black via-gray-900 to-gray-900 overflow-hidden justify-evenly pl-0 h-screen">
+      <div className="flex items-center flex-row pt-14 bg-gradient-to-r from-black via-gray-900 to-gray-900 overflow-hidden justify-evenly pl-0 h-screen">
         <div className="flex w-1/3 items-center ml-10 gap-8">
           {/* Signup Form */}
           <form
             noValidate
             //onSubmit={createNewAccount}
-            className="flex bg-gray-800 border h-[100%] w-full items-center rounded-xl p-5 pt-10 gap-4 flex-col shadow-[0_0_10px_10px_teal]"
+            className="flex bg-gray-800 border h-[80%] w-full items-center rounded-xl p-5 pt-10 gap-4 flex-col shadow-[0_0_10px_10px_tomato]"
           >
-            <h1 className="text-4xl font-semibold text-teal-500">
+            <h1 className="text-4xl font-semibold text-red-500">
               Registration Page
             </h1>
             <label
@@ -202,17 +202,17 @@ function SignUp() {
               />
             </div>
             <button 
-               className="relative bg-teal-400 p-10 pl-20 pr-20 mt-3 py-2 text-black font-bold text-lg rounded-md overflow-hidden group hover:bg-black hover:border-solid-white hover:text-white transition-transform duration-1000 ease-in-out"
+               className="relative bg-red-400 p-10 pl-20 pr-20 mt-3 py-2 text-black font-bold text-lg rounded-md overflow-hidden group hover:bg-black hover:border-solid-white hover:text-white transition-transform duration-1000 ease-in-out"
                  onClick={createNewAccount}
                >
                 {/* Horizontal Curtain */}
-                <span className="absolute inset-0 bg-teal-300 opacity-80 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out"></span>
+                <span className="absolute inset-0 bg-red-300 opacity-80 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out"></span>
                 Sign-Up
             </button>
             <p>
               If already have an account?{" "}
               <Link
-                className="text-teal-500 text-lg font-semibold"
+                className="text-red-500 text-lg font-semibold"
                 to={"/login"}
               >
                 Login
@@ -228,7 +228,7 @@ function SignUp() {
               alt="decorative gif"
               className="h-full w-full object-cover opacity-80"
             />
-            <div className="absolute inset-0 bg-gradient-to-l from-teal-800 via-teal-900 to-black opacity-60"></div>
+            <div className="absolute inset-0 bg-gradient-to-l from-red-800 via-red-900 to-black opacity-60"></div>
           </div>
         </div>
       </div>

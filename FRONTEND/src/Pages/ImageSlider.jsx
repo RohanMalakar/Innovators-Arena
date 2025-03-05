@@ -95,9 +95,9 @@ const Carousel = () => {
             </div>
 
             {/* Right Half: Text Div */}
-            <div className="w-2/3 h-full flex flex-col bg-gray-800 items-center justify-center ">
+            <div className="w-2/3 h-full flex flex-col bg-gray-400 items-center justify-center ">
                 <h1 className='text-6xl font-extrabold text-teal-300 '>Our Faculty </h1>
-                <h2 className="text-2xl p-20 from-accent-content">Faculties are dedicated, knowledgeable, and passionate, bringing expertise and real-world experience to the classroom. They inspire curiosity, foster critical thinking, and provide personalized support, empowering students to achieve academic success and grow in confidence.</h2>
+                <h2 className="text-2xl text-black p-20 from-accent-content">Faculties are dedicated, knowledgeable, and passionate, bringing expertise and real-world experience to the classroom. They inspire curiosity, foster critical thinking, and provide personalized support, empowering students to achieve academic success and grow in confidence.</h2>
             </div>
         </div>
     );

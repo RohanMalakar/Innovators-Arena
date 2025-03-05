@@ -107,11 +107,7 @@ function Login() {
                       left: 0,
                       right: 0,
                       bottom: 0,
-                      backgroundImage: `url(${gif5})`,
-                      backgroundSize: "auto 100%", // Scales to full height, adjusts width automatically
-                      backgroundPosition: "left, right", // Aligns images to the left and right
-                      backgroundRepeat: "true", // Prevents tiling
-                      opacity: 0.2, // Reduces opacity of the background GIF only
+                      backgroundColor:"white", // Reduces opacity of the background GIF only
                       zIndex: -1, // Keeps the background behind the content
                   }}
         ></div>
@@ -121,8 +117,8 @@ function Login() {
             
             <h1 className='p-10'>We Are Always Here To Help You!</h1>
 
-            <h3 className='text-3xl p-10 text-teal-300'>"Empowering Minds, One Lesson at a Time. Log in to Continue Your Journey."</h3>
-            <h3 className='text-2xl font-extralight pl-10 text-teal-300'>"Welcome back! Education unlocks endless possibilities, empowering you to explore, grow, and achieve. Continue right where you left off and let every lesson bring you closer to your dreams. Your journey awaits—let’s begin!"</h3>
+            <h3 className='text-3xl p-10 text-red-500'>"Empowering Minds, One Lesson at a Time. Log in to Continue Your Journey."</h3>
+            <h3 className='text-2xl font-extralight pl-10 text-red-500'>"Welcome back! Education unlocks endless possibilities, empowering you to explore, grow, and achieve. Continue right where you left off and let every lesson bring you closer to your dreams. Your journey awaits—let’s begin!"</h3>
 
 
         </div>
@@ -131,23 +127,19 @@ function Login() {
             {/* Background GIF with reduced opacity using ::before */}
         <div
                   style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      right: 0,
-                      bottom: 0,
-                      backgroundImage: `url(${gif5})`,
-                      backgroundSize: "auto 100%", // Scales to full height, adjusts width automatically
-                      backgroundPosition: "left, right", // Aligns images to the left and right
-                      backgroundRepeat: "true", // Prevents tiling
-                      opacity: 0.6, // Reduces opacity of the background GIF only
-                      zIndex: -1, // Keeps the background behind the content
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor:"Elephant", // Reduces opacity of the background GIF only
+                    zIndex: -1, // Keeps the background behind the content
                   }}
         ></div>
 
 
           <div
-            className="relative h-[70%] w-[70%] bg-gray-800 border-solid-white group overflow-hidden hover:shadow-[0_0_15px_15px_teal] duration-1000 rounded-xl"
+            className="relative h-[70%] w-[70%] bg-gray-800 border-solid-white group overflow-hidden hover:shadow-[0_0_15px_15px_tomato] duration-1000 rounded-xl"
             style={{
               transformStyle: "preserve-3d",
               perspective: "1000px",
@@ -156,7 +148,7 @@ function Login() {
             onMouseLeave={handleMouseLeave}
           >
             {/* Overlay Effect */}
-          {/* <div className="absolute inset-0 bg-teal-300 bg-opacity-20 transform -translate-y-full transition-transform duration-1000 ease-in-out group-hover:translate-y-0 rounded-xl"></div>*/}
+          {/* <div className="absolute inset-0 bg-red-300 bg-opacity-20 transform -translate-y-full transition-transform duration-1000 ease-in-out group-hover:translate-y-0 rounded-xl"></div>*/}
 
             {/* Login Form */}
             <form
@@ -168,7 +160,7 @@ function Login() {
                 transition: "transform 0.2s ease-out", // Smooth transition for reset
               }}
             >
-              <h1 className="text-4xl  text-teal-500 text-center font-bold">
+              <h1 className="text-4xl  text-red-500 text-center font-bold">
                 Login Now
               </h1>
 
@@ -200,15 +192,15 @@ function Login() {
               </div>
 
               {/* Login Button with Horizontal Curtain Effect */}
-              <button className="relative bg-teal-400  mt-3 py-2 text-black font-bold text-lg rounded-md overflow-hidden group hover:bg-black hover:border-solid-white hover:text-white">
+              <button className="relative bg-red-400  mt-3 py-2 text-black font-bold text-lg rounded-md overflow-hidden group hover:bg-black hover:border-solid-white hover:text-white">
                 {/* Horizontal Curtain */}
-                <span className="absolute inset-0 bg-teal-800 opacity-40 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out"></span>
+                <span className="absolute inset-0 bg-red-800 opacity-40 transform -translate-x-full group-hover:translate-x-0 transition-transform duration-1000 ease-in-out"></span>
                 Login
               </button>
 
               <p>
                 Do not have an account?{" "}
-                <Link className="text-teal-400 text-lg font-semibold" to={"/SignUp"}>
+                <Link className="text-red-400 text-lg font-semibold" to={"/SignUp"}>
                   SignUp
                 </Link>
               </p>

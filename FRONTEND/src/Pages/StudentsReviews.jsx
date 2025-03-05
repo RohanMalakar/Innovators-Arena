@@ -93,7 +93,7 @@ export default function StudentsReviews() {
   };
 
   return (
-    <div className='py-10 bg-gray-800'>
+    <div className='py-10 bg-gray-400'>
       <h2 className='text-center text-4xl font-bold text-gray-400 {/*shadow-lg shadow-black*/} mb-10'>What Do Our Students Say?</h2>
       <div className='max-w-7xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6'>
         {testimonials.map((testimonial, index) => (

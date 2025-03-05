@@ -32,60 +32,70 @@ function Homelayout({ children }) {
   }, [isLoggedin]);
   return (
     <div className="min-w-[90vw] w-full  h-screen ">
-      <header className="drawer fixed w-full bg-black  z-50 h-12">
+      <header className="drawer fixed w-full bg-red-900  z-50 h-12">
         <ul className=" gap-10 px-10 list-none w-full flex justify-between items-center">
           <div className="flex items-center h-12 space-x-4">
-              <Link href="#home" className="text-2xl font-extrabold hover:text-teal-400 transition">
-                  Code-Scorer
+              <Link href="#home" className="text-2xl text-white font-extrabold hover:text-teal-400 transition">
+                  Innovators-Arena
               </Link>
-              <img
+              {/* <img
                   src={gif7}
                   alt="Code-Scorer Animation"
                   className="h-12 w-12" // Adjust height and width as needed
-              />
+              /> */}
           </div>
           <li>
               <Link to={"/"}>
-                <span className="text-lg font-bold hover:text-teal-300 ">Home</span>
+                <span className="text-lg text-white font-bold hover:text-white ">Home</span>
               </Link>
           </li>
           <li>
               <Link to={"/about"}>
-                <span className="text-lg font-bold hover:text-teal-300 ">About</span>
+                <span className="text-lg text-white font-bold hover:text-white ">Events</span>
               </Link>
           </li>
-          {isLoggedIn && (
+          <li>
+              <Link to={"/projects"}>
+                <span className="text-lg text-white font-bold hover:text-white ">Projects</span>
+              </Link>
+          </li>
+          <li>
+              <Link to={"/about"}>
+                <span className="text-lg text-white font-bold hover:text-white ">About</span>
+              </Link>
+          </li>
+          {/* {isLoggedIn && (
               <li>
                 <Link to={"/chat/community"}>
-                  <span className="text-lg font-bold hover:text-teal-300  ">Community Chat</span>
+                  <span className="text-lg font-bold hover:text-white  ">Community Chat</span>
                 </Link>
               </li>
-          )}
+          )} */}
           {isLoggedIn && role == "ADMIN" && (
               <li>
                 <Link to={"/admin/dashboard"}>
-                  <span className="text-lg font-bold hover:text-teal-300  ">Admin Dashboard</span>
+                  <span className="text-lg text-white font-bold hover:text-white  ">Admin Dashboard</span>
                 </Link>
               </li>
            )}
            {isLoggedIn && role == "ADMIN" && (
               <li>
                 <Link to={"/course/create"}>
-                  <span className="text-lg font-bold hover:text-teal-300 ">Create course</span>
+                  <span className="text-lg font-bold  hover:text-white ">Create course</span>
                 </Link>
               </li>
             )}
             { role!="ADMIN" &&(
               <li>
                 <Link to={"/contact"}>
-                  <span className="text-lg font-bold hover:text-teal-300  ">Contact</span>
+                  <span className="text-lg text-white font-bold hover:text-white  ">Contact</span>
                 </Link>
               </li>
             )}
             {isLoggedIn && role == "ADMIN" && (
               <li>
                 <Link to={"/contact/showData"}>
-                  <span className="text-lg font-bold hover:text-teal-300  ">Contact data</span>
+                  <span className="text-lg font-bold hover:text-white  ">Contact data</span>
                 </Link>
               </li>
             )}
@@ -93,14 +103,14 @@ function Homelayout({ children }) {
             <div className="absolute right-10 gap-6 flex">
                 <li>
                     <Link to={"/user/profile"}>
-                      <span className="btn btn-sm border-transparent btn-primary bg-teal-300 ">
+                      <span className="btn btn-sm border-transparent btn-primary bg-white ">
                         Profile
                       </span>
                     </Link>
                  </li>
                 <li>
                   <Link onClick={handlelogout}>
-                    <span className="btn btn-sm  btn-secondary border-transparent bg-teal-300">
+                    <span className="btn btn-sm  btn-secondary border-transparent bg-white">
                       Logout
                     </span>
                   </Link>
@@ -110,14 +120,14 @@ function Homelayout({ children }) {
             (<div className="absolute right-10 gap-6 flex">
                 <li>
                   <Link to={"/login"}>
-                    <span className="btn btn-sm btn-primary bg-teal-300">
+                    <span className="btn btn-sm btn-primary bg-white">
                       Login
                     </span>
                   </Link>
                 </li>
                 <li>
                 <Link to={"/signup"}>
-                  <span className="btn btn-sm btn-primary bg-teal-300">
+                  <span className="btn btn-sm btn-primary bg-white">
                     Signup
                   </span>
                 </Link>

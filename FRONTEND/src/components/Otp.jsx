@@ -4,7 +4,6 @@ import toast from 'react-hot-toast';
 import { ImCross } from "react-icons/im";
 import gif7 from "../assets/Images/gif7.gif"
 import { Link } from 'react-router-dom';
-import axiosInstance from '../Hellers/axiosinstance.js';
 
 function Otp({length=6,email,emailVerified,setshowVerificationPage}) {
   const ref=useRef(new Array(length).fill(''))
@@ -14,15 +13,15 @@ function Otp({length=6,email,emailVerified,setshowVerificationPage}) {
   function handleChange(e) {
      return;
   }
-  async function handleResendOtp() {
+  function handleResendOtp() {
     generatedOtp.current=Math.floor(100000 + Math.random() * 900000).toString();
     if(!email)return;
     const data={
        email:email,
        otp:generatedOtp
     }
-     const response=await axiosInstance.post('/email/send',data)
-     if(!response.success)return;
+    // const response=await axiosInstance.post('/email/send',data)
+    // if(!response)return;
     toast.success("OTP is resended successfully")
   }
   function handleKeyDown(e,index) {

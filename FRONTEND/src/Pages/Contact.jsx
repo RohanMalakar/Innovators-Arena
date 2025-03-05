@@ -89,7 +89,7 @@ function Contact() {
       <div className="flex flex-row p-20 justify-between">
         <div className="flex w-[50%] h-[100%] justify-center ">
           <div
-            className="relative w-[60%] h-[70%]  bg-gray-800 border-solid-white group hover:shadow-[0_0_15px_15px_teal] overflow-hidden duration-1000 rounded-xl"
+            className="relative w-[60%] h-[70%]  bg-gray-800 border-solid-white group hover:shadow-[0_0_15px_15px_white] overflow-hidden duration-1000 rounded-xl"
             style={{
               transformStyle: "preserve-3d",
               perspective: "1000px",
@@ -98,7 +98,7 @@ function Contact() {
             onMouseLeave={handleMouseLeave}
           >
             {/* Overlay Effect */}
-            <div className="absolute inset-0 bg-teal-500 bg-opacity-20 transform -translate-y-full transition-transform duration-1000 ease-in-out group-hover:translate-y-0 rounded-xl"></div>
+            <div className="absolute inset-0 bg-red-300 bg-opacity-20 transform -translate-y-full transition-transform duration-1000 ease-in-out group-hover:translate-y-0 rounded-xl"></div>
 
             {/* Contact Form */}
             <form
@@ -111,7 +111,7 @@ function Contact() {
                 minHeight: "400px", // Ensure enough space for the form
               }}
             >
-              <h1 className="text-4xl text-teal-400 text-center font-bold">
+              <h1 className="text-4xl text-red-300 text-center font-bold">
                 Contact Us
               </h1>
 
@@ -159,7 +159,7 @@ function Contact() {
               {/* Add margin-bottom to create space after the button */}
               <button
                 type="submit"
-                className="bg-teal-400 mt-3 py-2 text-black font-bold text-lg rounded-md mb-6"
+                className="bg-red-300 mt-3 py-2 text-black font-bold text-lg rounded-md mb-6"
               >
                 Submit
               </button>
@@ -168,17 +168,17 @@ function Contact() {
         </div>
 
         <div className="text-2xl w-[50%]">
-          <h1 className="text-4xl font-extrabold p-10 text-teal-300">
+          <h1 className="text-4xl font-extrabold p-10 text-red-300">
             Get in Touch with Us
           </h1>
           <p className="font-sans text-xl font-bold pl-10 pr-10">
-            At CodeScorer, we believe in creating a supportive and interactive
+            At Innovators Arena, we believe in creating a supportive and interactive
             learning environment for students of all ages. Whether you're
             seeking academic assistance, online tutoring, or have any questions
             about our courses, we're here to help you every step of the way!
           </p>
 
-          <h3 className="text-2xl font-bold p-5 pl-10 pr-10 text-teal-300">
+          <h3 className="text-2xl font-bold p-5 pl-10 pr-10 text-red-300">
             Why Choose Us
           </h3>
           <div>
